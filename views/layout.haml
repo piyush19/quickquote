@@ -19,16 +19,6 @@
             .row
               %img{:src => "images/sydneytesters.png", :style => "margin-top:30px;", :class => "mainbox col-xs-8 col-sm-8 col-md-8 col-xs-offset-2 col-sm-offset-2 col-md-offset-2"}
       .row 
-        %ul.nav.nav-pills{:class => "col-xs-8 col-sm-8 col-md-8 col-xs-offset-8 col-sm-offset-8 col-md-offset-8"}
-          %li
-            .dropdown
-              - if !warden_handler.authenticated?
-                != haml :"_logindropdown"
-              - else
-                != haml :"_loggedindropdown"
-      .row 
-        #content{:class => "mainbox col-xs-8 col-sm-8 col-md-8 col-xs-offset-2 col-sm-offset-2 col-md-offset-2"}
-          != haml :"_flash"
         .container-fluid
           .row
             =yield

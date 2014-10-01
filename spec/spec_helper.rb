@@ -1,10 +1,5 @@
 $: << './lib'
 
-require 'simplecov'
-SimpleCov.start do
-  add_filter '/spec/'
-end
-
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
  
 require 'rubygems'
