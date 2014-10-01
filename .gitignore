@@ -10,6 +10,8 @@
 /tmp/
 /log/
 /grid/*.log
+ruby/*
+cucumber.json
 
 ## Specific to RubyMotion:
 .dat*
